@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Sidebar Styling */
+  .sidebar {
+    width: 250px;
+    background: linear-gradient(135deg, #4C51BF, #6B46C1);
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-right: 2px solid #ddd;
+  }
+  
+  .sidebar h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 20px 0;
+  }
+  
+  .sidebar ul li a {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #e4e4e4;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .sidebar ul li a i {
+    margin-right: 15px;
+    font-size: 20px;
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #5A67D8;
+    color: #ffffff;
+    transform: translateX(5px);
+    transition: 0.2s ease-in-out;
+  }
+  
+  .sidebar ul li a.active {
+    background-color: #6B46C1;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex-grow: 1;
+    padding: 30px;
+    background-color: #fff;
+    overflow-y: auto;
+  }
+  
+  header {
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    font-size: 32px;
+    color: #333;
+  }
+  
+  header p {
+    color: #6c757d;
+  }
+  
+  /* Chart Styling */
+  .chart-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .chart-container h3 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Grid Layout */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .grid-item {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .grid-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .grid-item h3 {
+    font-size: 20px;
+    color: #4c51bf;
+  }
+  
+  .grid-item p {
+    font-size: 18px;
+    color: #6c757d;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .sidebar {
+      width: 200px;
+    }
+  
+    .main-content {
+      padding: 20px;
+    }
+  }
+  
